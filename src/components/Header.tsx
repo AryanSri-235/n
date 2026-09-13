@@ -35,6 +35,12 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-6">
           <Link
+            href="#comparison"
+            className="text-sm font-normal text-text-secondary hover:text-text-primary transition-colors"
+          >
+            The Engine
+          </Link>
+          <Link
             href="#proof"
             className="text-sm font-normal text-text-secondary hover:text-text-primary transition-colors"
           >
@@ -88,6 +94,13 @@ export default function Header() {
       {/* Mobile Menu Dropdown */}
       {mobileMenuOpen && (
         <div className="md:hidden bg-surface-card border-b border-border-subtle px-6 py-4 space-y-3 shadow-lg">
+          <Link
+            href="#comparison"
+            onClick={() => setMobileMenuOpen(false)}
+            className="block text-sm font-medium text-text-secondary hover:text-text-primary py-1"
+          >
+            The Engine
+          </Link>
           <Link
             href="#proof"
             onClick={() => setMobileMenuOpen(false)}

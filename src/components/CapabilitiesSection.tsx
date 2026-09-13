@@ -49,6 +49,8 @@ const capabilities: Capability[] = [
   },
 ];
 
+import SpotlightCard from "./SpotlightCard";
+
 export default function CapabilitiesSection() {
   return (
     <section
@@ -72,7 +74,7 @@ export default function CapabilitiesSection() {
       {/* 2x2 Bento Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {capabilities.map((cap) => (
-          <div
+          <SpotlightCard
             key={cap.id}
             className="glass-card p-6 sm:p-8 rounded-2xl flex flex-col justify-between group"
           >
@@ -115,7 +117,7 @@ export default function CapabilitiesSection() {
                 </li>
               ))}
             </ul>
-          </div>
+          </SpotlightCard>
         ))}
       </div>
     </section>

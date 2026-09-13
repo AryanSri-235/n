@@ -46,6 +46,8 @@ const caseStudies: CaseStudy[] = [
   },
 ];
 
+import SpotlightCard from "./SpotlightCard";
+
 export default function CaseStudiesSection() {
   return (
     <section
@@ -76,7 +78,7 @@ export default function CaseStudiesSection() {
       {/* Metric-First Bento Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {caseStudies.map((item) => (
-          <article
+          <SpotlightCard
             key={item.id}
             className="glass-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group"
           >
@@ -126,7 +128,7 @@ export default function CaseStudiesSection() {
                 Case details →
               </span>
             </div>
-          </article>
+          </SpotlightCard>
         ))}
       </div>
     </section>

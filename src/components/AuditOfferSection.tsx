@@ -1,3 +1,5 @@
+import SpotlightCard from "./SpotlightCard";
+
 export default function AuditOfferSection() {
   const pillars = [
     {
@@ -69,7 +71,7 @@ export default function AuditOfferSection() {
           </div>
 
           {/* Audit Offer Card (5 columns) */}
-          <div className="lg:col-span-5 bg-white p-6 rounded-xl shadow-xs border border-border-strong flex flex-col justify-center space-y-3.5">
+          <SpotlightCard className="lg:col-span-5 bg-white p-6 rounded-xl shadow-xs border border-border-strong flex flex-col justify-center space-y-3.5">
             <div className="flex items-center justify-between">
               <span className="text-xs text-coral-primary font-medium px-2.5 py-0.5 rounded-full bg-coral-subtle border border-coral-border/50">
                 Strictly 5 Spots/Mo
@@ -105,7 +107,7 @@ export default function AuditOfferSection() {
                 Send a direct DM with &ldquo;AUDIT&rdquo; to secure your slot
               </p>
             </div>
-          </div>
+          </SpotlightCard>
         </div>
       </div>
     </section>
