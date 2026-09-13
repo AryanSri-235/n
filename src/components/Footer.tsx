@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -6,9 +7,20 @@ export default function Footer() {
       <div className="max-w-[1120px] mx-auto px-5 lg:px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Brand & Subtitle */}
         <div className="flex flex-col items-center md:items-start gap-1">
-          <span className="text-lg font-semibold text-text-primary tracking-tight">
-            Manas Srivastava
-          </span>
+          <div className="flex items-center gap-2.5">
+            <div className="w-6 h-6 rounded-md overflow-hidden border border-border-subtle shrink-0">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                width={24}
+                height={24}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <span className="text-lg font-semibold text-text-primary tracking-tight">
+              Manas Srivastava
+            </span>
+          </div>
           <p className="text-xs sm:text-sm text-text-secondary text-center md:text-left">
             Scaling high-growth tech ventures through disciplined performance &amp;
             funnel architecture.

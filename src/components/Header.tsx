@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,13 +11,25 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 bg-surface-canvas/90 backdrop-blur-md border-b border-border-subtle">
       <div className="h-20 max-w-[1120px] mx-auto px-5 lg:px-8 flex items-center justify-between gap-4">
         {/* Logo / Personal Brand */}
-        <Link href="#" className="flex flex-col group">
-          <span className="text-lg font-semibold text-text-primary tracking-tight group-hover:text-coral-primary transition-colors">
-            Manas Srivastava
-          </span>
-          <span className="text-xs text-text-secondary">
-            Head of Growth &amp; Performance
-          </span>
+        <Link href="#" className="flex items-center gap-3 group">
+          <div className="w-9 h-9 rounded-lg overflow-hidden border border-border-subtle shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={36}
+              height={36}
+              priority
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <div className="flex flex-col">
+            <span className="text-lg font-semibold text-text-primary tracking-tight group-hover:text-coral-primary transition-colors">
+              Manas Srivastava
+            </span>
+            <span className="text-xs text-text-secondary">
+              Head of Growth &amp; Performance
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Navigation */}
@@ -41,22 +54,14 @@ export default function Header() {
           </Link>
         </nav>
 
-        {/* Action Button & Avatar */}
-        <div className="hidden sm:flex items-center gap-4">
+        {/* Action Button */}
+        <div className="hidden sm:flex items-center">
           <Link
             href="#contact"
             className="inline-flex items-center justify-center rounded-full bg-coral-primary hover:bg-coral-hover text-on-primary text-sm font-medium px-6 py-2.5 transition-colors shadow-sm"
           >
             Let&apos;s Talk
           </Link>
-          <div
-            className="w-8 h-8 rounded-full bg-coral-primary flex items-center justify-center shrink-0 shadow-sm"
-            aria-label="Profile Avatar"
-          >
-            <span className="material-symbols-outlined text-white text-[18px]">
-              person
-            </span>
-          </div>
         </div>
 
         {/* Mobile Menu Toggle Button */}

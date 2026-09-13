@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Manas Srivastava | Head of Growth & Performance",
   description:
     "Growth campaigns built to compound revenue. High-velocity acquisition systems, multi-angle paid funnels, and personal inbound engines.",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   keywords: [
     "Growth Marketing",
     "Performance Marketing",
@@ -31,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakartaSans.variable} scroll-smooth`}>
       <head>
+        <link rel="icon" href="/logo.png" type="image/png" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"

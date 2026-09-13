@@ -3,18 +3,18 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="w-full max-w-[1120px] mx-auto px-5 lg:px-8 pt-12 pb-16 md:pb-20">
+    <section className="w-full max-w-[1120px] mx-auto px-5 lg:px-8 min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center py-12">
       <div className="flex flex-col items-center text-center max-w-3xl mx-auto space-y-6">
         {/* Avatar with Availability Badge */}
         <div className="relative">
           <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full overflow-hidden border-2 border-border-subtle shadow-sm mx-auto ring-4 ring-surface-card bg-surface-container relative">
             <Image
-              src="/avatar.jpg"
+              src="/speaker-manas.jpg"
               alt="Manas Srivastava - Head of Growth & Performance"
-              width={112}
-              height={112}
+              width={128}
+              height={128}
               priority
-              className="w-full h-full object-cover object-center"
+              className="w-full h-full object-cover object-[50%_18%]"
             />
           </div>
           <span
@@ -63,65 +63,6 @@ export default function HeroSection() {
             </span>
             <span>Connect on LinkedIn</span>
           </a>
-        </div>
-
-        {/* Metrics Benchmark Banner */}
-        <div className="w-full mt-6 p-6 bg-surface-card rounded-xl shadow-sm border border-border-subtle">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-            {/* Metric 1 */}
-            <div className="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-lowest">
-              <span className="text-xs font-semibold text-text-tertiary uppercase tracking-wider">
-                US Lead Generation
-              </span>
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl sm:text-[22px] text-text-primary font-semibold">
-                  ₹5–₹40
-                </span>
-                <span className="text-xs font-medium text-tertiary bg-on-tertiary-container px-2 py-0.5 rounded-full">
-                  -68% Avg CPL
-                </span>
-              </div>
-              <p className="text-xs text-text-secondary mt-1">
-                High-intent Meta campaigns across North America verticals.
-              </p>
-            </div>
-
-            {/* Metric 2 */}
-            <div className="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-lowest">
-              <span className="text-xs font-semibold text-text-tertiary uppercase tracking-wider">
-                Multimodal Distribution
-              </span>
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl sm:text-[22px] text-text-primary font-semibold">
-                  1M+
-                </span>
-                <span className="text-xs font-medium text-coral-primary bg-coral-subtle px-2 py-0.5 rounded-full">
-                  Verified Reach
-                </span>
-              </div>
-              <p className="text-xs text-text-secondary mt-1">
-                Organic &amp; paid algorithmic resonance for sports tech &amp; D2C.
-              </p>
-            </div>
-
-            {/* Metric 3 */}
-            <div className="flex flex-col gap-1 p-3 rounded-lg bg-surface-container-lowest">
-              <span className="text-xs font-semibold text-text-tertiary uppercase tracking-wider">
-                Rapid Sprint Velocity
-              </span>
-              <div className="flex items-baseline gap-2">
-                <span className="text-2xl sm:text-[22px] text-text-primary font-semibold">
-                  30+ Sales
-                </span>
-                <span className="text-xs font-medium text-secondary bg-surface-container px-2 py-0.5 rounded-full">
-                  In 48 Hours
-                </span>
-              </div>
-              <p className="text-xs text-text-secondary mt-1">
-                Contextual AI creative hooks paired with rapid checkout funnels.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
