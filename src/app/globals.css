@@ -54,3 +54,43 @@ body {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   vertical-align: middle;
 }
+
+/* Infinite Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Gentle slow radar pulse for Floating Quick Chat */
+@keyframes slowRadar {
+  0% {
+    transform: scale(0.98);
+    opacity: 0.4;
+  }
+  60% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+
+.animate-slow-radar {
+  animation: slowRadar 3.2s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
