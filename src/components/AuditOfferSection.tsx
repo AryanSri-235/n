@@ -20,7 +20,7 @@ export default function AuditOfferSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* 4 Clean Pillars (7 columns) */}
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="p-4 rounded-xl bg-surface-container-low border border-border-subtle flex flex-col justify-center">
@@ -81,61 +81,39 @@ export default function AuditOfferSection() {
           </div>
 
           {/* Audit Offer Card (5 columns) */}
-          <div className="lg:col-span-5 bg-surface-container-lowest p-6 rounded-xl shadow-sm border border-border-subtle flex flex-col justify-between space-y-6">
-            <div>
-              {/* Status Chips */}
-              <div className="flex items-center justify-between mb-3">
-                <span className="text-xs text-coral-primary font-medium px-2.5 py-0.5 rounded-full bg-coral-subtle">
-                  Strictly 5 Spots/Mo
-                </span>
-                <span className="text-xs text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full flex items-center gap-1.5 font-medium border border-emerald-100">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                  2 Left This Month
-                </span>
-              </div>
-
-              <h3 className="text-lg font-medium text-text-primary mb-2">
-                Claim Free 3-Point Profile Teardown
-              </h3>
-              <p className="text-xs text-text-secondary leading-relaxed mb-4">
-                I will personally analyze your current headline, banner hook, and featured section, returning a voice note + structured PDF audit with zero pitch strings.
-              </p>
-
-              {/* Before / After Teardown Box */}
-              <div className="p-3.5 bg-surface-container-low rounded-xl border border-border-subtle space-y-2.5">
-                <div className="flex items-start gap-2 text-xs">
-                  <span className="px-1.5 py-0.5 rounded bg-red-100 text-red-700 font-medium shrink-0">
-                    Before
-                  </span>
-                  <span className="text-text-tertiary italic">
-                    &ldquo;Growth Enthusiast &amp; Marketer · Helping Brands Scale&rdquo;
-                  </span>
-                </div>
-                <div className="flex items-start gap-2 text-xs">
-                  <span className="px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700 font-medium shrink-0">
-                    After
-                  </span>
-                  <span className="text-text-primary font-medium">
-                    &ldquo;Engineered ₹5 CPL acquisition funnels &amp; scaled $1.2M founder inbound pipeline&rdquo;
-                  </span>
-                </div>
-              </div>
+          <div className="lg:col-span-5 bg-surface-container-lowest p-5 sm:p-6 rounded-xl shadow-sm border border-border-subtle flex flex-col justify-center space-y-3.5">
+            <div className="flex items-center justify-between">
+              <span className="text-xs text-coral-primary font-medium px-2.5 py-0.5 rounded-full bg-coral-subtle">
+                Strictly 5 Spots/Mo
+              </span>
+              <span className="text-xs text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full flex items-center gap-1.5 font-medium border border-emerald-100">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                2 Left This Month
+              </span>
             </div>
 
-            {/* CTA Button & Help Text */}
-            <div className="space-y-3 pt-2">
+            <div>
+              <h3 className="text-base sm:text-lg font-semibold text-text-primary">
+                Free 1:1 Inbound Teardown
+              </h3>
+              <p className="text-xs text-text-secondary leading-relaxed mt-1">
+                Get a personalized voice note &amp; action plan auditing your headline hook, banner, and inbound funnel.
+              </p>
+            </div>
+
+            <div className="space-y-2 pt-1">
               <a
                 href="https://www.linkedin.com/in/personalbrandingmanas/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full flex items-center justify-center gap-2 rounded-full bg-coral-primary hover:bg-coral-hover text-on-primary text-sm sm:text-base py-3 transition-colors shadow-sm font-medium"
+                className="w-full flex items-center justify-center gap-2 rounded-full bg-coral-primary hover:bg-coral-hover text-on-primary text-sm py-2.5 transition-colors shadow-sm font-medium"
               >
                 <span>Request Profile Audit</span>
-                <span className="material-symbols-outlined text-[18px]">
+                <span className="material-symbols-outlined text-[16px]">
                   open_in_new
                 </span>
               </a>
-              <p className="text-xs text-center text-text-tertiary">
+              <p className="text-[11px] text-center text-text-tertiary">
                 Send a direct DM with &ldquo;AUDIT&rdquo; to secure your slot
               </p>
             </div>
