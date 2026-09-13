@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -34,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${plusJakartaSans.variable} scroll-smooth`}>
+    <html lang="en" className={`${plusJakartaSans.variable}`}>
       <head>
         <link rel="icon" href="/logo.png" type="image/png" />
         <link
@@ -43,7 +44,7 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-surface-canvas text-text-primary antialiased font-sans">
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );
